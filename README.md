@@ -1,27 +1,43 @@
-# Weather
+# Jobs - OBSERVABLE
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.2.3.
+## POC Observable com subcribe.
 
-## Development server
+  - POC para aprendizado de Observable com subcribe.
+  - Consumindo API Pública [API JOBS](https://jobs.github.com/positions.json?description=python&full_time=true&location=sf)
+  - Apenas listando com um ngFor simples
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+## APIS Públicas
+  - [Lista de APIS](https://github.com/public-apis/public-apis#jobs)
 
-## Code scaffolding
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Configuração de projeto
+### Verificar se possue node e npm instalados.
+```sh
+// Para verificar versão do Node.
+$ node -v
+// Para verificar versão do NPM.
+$ npm -v
+```
 
-## Build
+### Caso não tenha o node instalado
+- Acesse [node.js](https://nodejs.org/en/) e baixe a versão mais recente, por padrão o npm já será instalado.
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
 
-## Running unit tests
+### Instalação Angular CLI
+- Ferramenta utilizada para rodar o projeto.
+```sh
+// Comando de instalação do angular CLI
+$ npm install -g @angular/cli
+```
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+### Rodar o Projeto
+```sh
+// Ir até a pasta raiz do projeto clonado e rodar o comando abaixo para instalar todas as dependências
+$ npm install
+// Agora execute o comando abaixo para executar o projeto e abrir no navegador
+$ ng serve -o
+```
 
-## Running end-to-end tests
+### CORS Policy
+  - Para não receber bloqueamento de CORS instale [CORS - Plugin Chrome](https://chrome.google.com/webstore/detail/allow-cors-access-control/lhobafahddgcelffkeicbaginigeejlf)
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
